@@ -1,0 +1,98 @@
+
+.wxInvitation{color-scheme:light;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;color:light-dark(#202020,#e5e5e5)}
+.wxInvitation *{box-sizing:border-box}
+.wxInvitation .wx{display:grid;grid-template-columns:220px minmax(0,1fr);border:1px solid light-dark(#dedede,#3c3c3c);border-radius:13px;overflow:hidden;background:light-dark(#f7f7f7,#242424);font-size:15px;line-height:1.7;min-height:1040px}
+.wxInvitation .sidebar{background:light-dark(#eaeaea,#202020);border-right:1px solid light-dark(#dedede,#3c3c3c)}
+.wxInvitation .searchbar{height:76px;display:flex;gap:12px;align-items:center;padding:18px}
+.wxInvitation .search{display:flex;align-items:center;gap:8px;padding:3px 9px;flex:1;background:light-dark(#dedede,#303030);border-radius:5px;color:light-dark(#787878,#b0b0b0);font-size:13px}
+.wxInvitation .search svg{width:15px;height:15px}
+.wxInvitation .contact{display:flex;gap:11px;padding:19px 14px;align-items:center;min-width:0}
+.wxInvitation .contact.active{background:light-dark(#12aa72,#177b53);color:#fff}
+.wxInvitation .contact .details{min-width:0;flex:1}
+.wxInvitation .contact .details b{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:15px;font-weight:500}
+.wxInvitation .contact .details small{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:12px;color:light-dark(#8c8c8c,#a4a4a4)}
+.wxInvitation .contact.active small{color:#d8f1e8}
+.wxInvitation .contact time{font-size:11px;align-self:flex-start;color:light-dark(#909090,#aaa);white-space:nowrap}
+.wxInvitation .contact.active time{color:#d8f1e8}
+.wxInvitation .avatar{width:40px;height:40px;flex-shrink:0;display:grid;place-items:center;position:relative;overflow:hidden;border-radius:7px;background:light-dark(#e2e9dd,#45523b);font-size:27px;line-height:1}
+.wxInvitation .teacher{background:linear-gradient(145deg,#ffdfb9,#ff976c);border:1px solid #f2b17b}
+.wxInvitation .teacher:after{content:'阿朴';position:absolute;bottom:2px;left:0;right:0;text-align:center;font-size:9px;line-height:1.2;color:#7c4216;background:#ffeec9}
+.wxInvitation .parent-avatar{background:linear-gradient(155deg,#d7ead7,#c2d8ef)}
+.wxInvitation .conversation{min-width:0;display:flex;flex-direction:column}
+.wxInvitation .chat-header{height:76px;border-bottom:1px solid light-dark(#e6e6e6,#383838);padding:19px 27px;display:flex;align-items:center;justify-content:space-between;gap:10px}
+.wxInvitation .chat-header h3{font-size:18px;line-height:1.6;font-weight:500;margin:0}
+.wxInvitation .brand{color:light-dark(#f18a28,#ffc27d);font-size:13px;margin-left:10px;white-space:nowrap}
+.wxInvitation .tools{display:flex;gap:20px;color:light-dark(#5d5d5d,#bababa)}
+.wxInvitation .tools svg{width:21px;height:21px}
+.wxInvitation .messages{padding:22px 26px 24px;display:flex;flex-direction:column;gap:16px;flex:1;min-width:0}
+.wxInvitation .timestamp{text-align:center;color:light-dark(#939398,#aaa);font-size:12px;margin-bottom:4px}
+.wxInvitation .message{display:flex;align-items:flex-start;gap:13px;min-width:0}
+.wxInvitation .bubble{position:relative;background:light-dark(#ededed,#353535);border-radius:7px;padding:13px 17px;max-width:calc(100% - 56px);overflow-wrap:anywhere}
+.wxInvitation .bubble:before{content:'';position:absolute;left:-6px;top:15px;border-top:6px solid transparent;border-bottom:6px solid transparent;border-right:7px solid light-dark(#ededed,#353535)}
+.wxInvitation p{margin:0}
+.wxInvitation p+p{margin-top:12px}
+.wxInvitation strong{font-weight:500}
+.wxInvitation .tag{display:inline-block;font-size:11px;padding:1px 6px;border-radius:3px;background:light-dark(#fff0d9,#51412c);color:light-dark(#95651c,#e9c78f);margin-left:7px;vertical-align:middle}
+.wxInvitation .mini{width:380px;max-width:calc(100% - 56px);background:light-dark(#fff,#333);border:1px solid light-dark(#e5e5e5,#474747);border-radius:6px;padding:0;text-align:left;font-family:inherit;color:inherit;overflow:hidden;font-size:14px;line-height:1.6}
+.wxInvitation .mini-head{padding:11px 13px;display:flex;align-items:center;gap:7px;color:light-dark(#777,#bbb);font-size:12px}
+.wxInvitation .mini-logo{width:18px;height:18px;background:#ffdc66;border-radius:4px;display:grid;place-items:center;font-size:12px}
+.wxInvitation .mini-title{padding:0 13px 10px;font-size:16px;font-weight:500}
+.wxInvitation .mini-cover{margin:0 13px;padding:15px;background:light-dark(#e7efdf,#3a4934);display:flex;justify-content:space-between;align-items:center;color:light-dark(#324e2d,#dcebd6)}
+.wxInvitation .mini-cover small{font-size:12px;display:block;font-weight:400}
+.wxInvitation .mini-cover b{font-size:19px;font-weight:500}
+.wxInvitation .book-emoji{font-size:37px}
+.wxInvitation .mini-action{padding:10px 13px;font-size:13px;color:light-dark(#3a6a47,#b7d4b5)}
+.wxInvitation .mini-total{margin:12px 13px 0;font-size:13px;color:light-dark(#48614e,#c2d9c5)}
+.wxInvitation .mini-total strong{font-size:21px;color:light-dark(#18713d,#9ed5ae);font-variant-numeric:tabular-nums}
+.wxInvitation .mini-slots{padding:4px 13px 0}
+.wxInvitation .mini-slot{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:4px 8px;padding:10px 0;border-bottom:1px solid light-dark(#edf0ec,#494f48)}
+.wxInvitation .mini-slot-count{font-size:13px;color:light-dark(#68716a,#b9c4bb);white-space:nowrap}
+.wxInvitation .mini-slot-count b{font-size:16px;color:light-dark(#292f2a,#e6eee7);font-weight:500;font-variant-numeric:tabular-nums}
+.wxInvitation .hot{display:inline-block;padding:2px 6px;margin-left:5px;border-radius:4px;font-size:11px;background:light-dark(#fff0e4,#593b27);color:light-dark(#c35417,#ffc092);white-space:nowrap}
+.wxInvitation .mini-demo{font-size:11px;color:light-dark(#929292,#a8a8a8);padding:0 13px 9px}
+.wxInvitation .mini-foot{border-top:1px solid light-dark(#eee,#484848);padding:5px 13px;font-size:11px;color:light-dark(#888,#aaa)}
+.wxInvitation .booking{margin-left:53px;max-width:380px;padding:14px;background:light-dark(#fff,#333);border:1px solid light-dark(#ddd,#484848);border-radius:8px}
+.wxInvitation .booking[hidden]{display:none}
+.wxInvitation .booking h4{margin:0 0 10px;font-size:15px;font-weight:500}
+.wxInvitation .slot{display:flex;align-items:center;justify-content:space-between;gap:10px;border-top:1px solid light-dark(#eee,#484848);padding:11px 0}
+.wxInvitation .slot small{display:block;font-size:12px;color:light-dark(#777,#bbb)}
+.wxInvitation .slot button,.wxInvitation .send{border:0;background:light-dark(#07a45e,#36b779);color:light-dark(#fff,#0d2e1e);border-radius:4px;padding:6px 13px;font-size:13px;font-family:inherit;white-space:nowrap}
+.wxInvitation .message.parent{flex-direction:row-reverse}
+.wxInvitation .parent .bubble{background:light-dark(#a9e97a,#3b734b)}
+.wxInvitation .parent .bubble:before{left:auto;right:-6px;border-right:0;border-left:7px solid light-dark(#a9e97a,#3b734b)}
+.wxInvitation .response{display:flex;flex-direction:column;gap:16px}
+.wxInvitation .composer{border-top:1px solid light-dark(#dedede,#3d3d3d);padding:13px 25px 17px;background:light-dark(#fff,#292929)}
+.wxInvitation .compose-tools{display:flex;gap:18px;color:light-dark(#5c5c5c,#bcbcbc);margin-bottom:10px}
+.wxInvitation .compose-tools svg{width:20px;height:20px}
+.wxInvitation .quick{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:9px}
+.wxInvitation .quick button{border:1px solid light-dark(#ddd,#4c4c4c);background:light-dark(#fafafa,#353535);color:light-dark(#5d6b60,#c7d1c9);border-radius:5px;padding:5px 9px;font-family:inherit;font-size:12px}
+.wxInvitation textarea{width:100%;resize:vertical;min-height:58px;border:0;background:transparent;color:inherit;font:inherit;outline-offset:3px;padding:0}
+.wxInvitation .sendrow{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.wxInvitation .hint{font-size:11px;color:light-dark(#929292,#aaa)}
+.wxInvitation .caption{font-size:12px;text-align:center;padding:10px;color:light-dark(#818181,#aaa)}
+.wxInvitation .result{min-width:0}
+.wxInvitation .wx{border:0;border-radius:0;min-height:100vh}
+.wxInvitation .conversation .chat-header{margin:0;text-align:left}
+.wxInvitation .bubble{margin:0;font-size:1rem}
+.wxInvitation .chat-header h3{font-size:1.125rem;color:inherit}
+.wxInvitation p{color:inherit;line-height:1.7}
+.wxInvitation .bubble p+p{margin-top:12px}
+.wxInvitation .mini{width:500px;cursor:default}
+.wxInvitation .mini-title{font-size:1rem}
+.wxInvitation .mini-cover b{display:block;font-size:1.25rem;line-height:1.5}
+.wxInvitation .mini-cover small{font-size:.875rem}
+.wxInvitation .mini-slot{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px}
+.wxInvitation .session-name{font-size:1rem;min-width:0}
+.wxInvitation .session-action{display:flex;align-items:center;gap:12px}
+.wxInvitation .session-action .mini-slot-count{font-size:.875rem}
+.wxInvitation .bookNow,.wxInvitation .openApp{border:0;border-radius:5px;background:#07a45e;color:#fff;font:inherit;font-size:.875rem;padding:8px 14px;min-height:42px;white-space:nowrap}
+.wxInvitation .bookNow:disabled{background:#e4efe7;color:#3d6751;opacity:1}
+.wxInvitation .mini-demo{padding-top:9px}
+.wxInvitation .restart{background:transparent;border:0;color:#68716b;font-size:.875rem;padding:3px;white-space:nowrap}
+.wxInvitation .app-entry{margin-top:14px}
+.wxInvitation .response:empty{display:none}
+.wxInvitation textarea{border-radius:0}
+@media(max-width:760px){.wxInvitation .mini-slot{grid-template-columns:minmax(0,1fr)}.wxInvitation .session-action{justify-content:space-between}.wxInvitation .hot{font-size:.75rem}.wxInvitation .mini-slot-count b{font-size:1rem}}
+@media(max-width:760px){.wxInvitation .wx{grid-template-columns:170px minmax(0,1fr)}.wxInvitation .contact{padding:18px 9px;gap:8px}.wxInvitation .chat-header{padding:15px}.wxInvitation .messages{padding:20px 15px}.wxInvitation .brand{display:block;margin:0;font-size:11px}.wxInvitation .tools{gap:12px}}
+@media(max-width:560px){.wxInvitation .wx{display:block;min-height:1200px}.wxInvitation .sidebar{display:none}.wxInvitation .messages{padding:20px 11px}.wxInvitation .bubble{padding:12px;font-size:15px}.wxInvitation .message{gap:10px}.wxInvitation .avatar{width:35px;height:35px;font-size:24px}.wxInvitation .bubble,.wxInvitation .mini{max-width:calc(100% - 45px)}.wxInvitation .booking{margin-left:45px}.wxInvitation .composer{padding:12px}.wxInvitation .hint{max-width:185px}.wxInvitation .conversation{min-height:1200px}}
+

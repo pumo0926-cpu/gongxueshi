@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>共学成果 · 周周阿朴共学室</title>
+<link rel="stylesheet" href="weekend.css?v=booking-r4">
+<link rel="stylesheet" href="study-room-visual.css?v=booking-r4">
+<link rel="stylesheet" href="reservation.css?v=booking-r4">
+<script defer src="reservation-store.js?v=booking-r4"></script>
+<script defer src="study-room-visual.js?v=booking-r4"></script>
+<script defer src="room-activity.js?v=booking-r4"></script>
+<script defer src="classroom.js?v=booking-r4"></script>
+</head>
+<body class="resultsPage">
+<main class="resultsPanel" aria-label="本节共学成果"></main>
+<footer class="resultFoot">共学体验 Demo · 同伴状态和人数为示例，分享仅保存在当前浏览器</footer>
+<dialog class="resultDialog" aria-labelledby="shareTitle">
+<form id="shareForm">
+<h2 id="shareTitle">分享我的本节收获</h2>
+<div class="shareKinds" role="group" aria-label="选择分享类型">
+<label><input type="radio" name="shareKind" value="感受">我的感受</label>
+<label><input type="radio" name="shareKind" value="收获" checked>我的收获</label>
+</div>
+<p class="sharePrompt"></p>
+<textarea id="shareText" aria-label="分享内容" maxlength="240" required></textarea>
+<div class="dialogButtons"><button id="cancelShare" type="button">取消</button><button type="submit">分享到共学成果</button></div>
+</form>
+</dialog>
+</body>
+</html>

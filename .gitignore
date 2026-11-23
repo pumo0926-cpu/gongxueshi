@@ -1,0 +1,6 @@
+.DS_Store
+work/
+outputs/
+*.zip
+**/.sites-checkout/
+node_modules/
