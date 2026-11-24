@@ -48,3 +48,11 @@ python3 -m http.server 8766 --bind 127.0.0.1 --directory up-focus-club/dist
 同伴、人数和活动为示例。预约、学习进度与分享保存在当前浏览器的 localStorage 中，不提供真实多人同步、消息发送、支付或会员验证。电脑端打开 mobile.html 时采用手机尺寸，手机端全屏显示。
 
 本仓库存放当前预览版本；提交 GitHub 不会自动发布或更新原 Sites 站点。
+
+## GitHub Pages 发布
+
+仓库保持私有。首次启用：进入仓库 Settings → Pages，在 Build and deployment 的 Source 中选择 GitHub Actions。随后到 Actions 运行“Publish co-learning Demo to GitHub Pages”，或重新运行此前因未启用 Pages 而失败的流程。
+
+部署流程只上传 `up-focus-club/dist/` 中的静态页面与资源。启用后，后续对该目录的 main 分支提交将自动更新站点，不依赖本地电脑。发布成功时，以 Actions 的 github-pages 环境给出的地址为准；手机版入口为该地址下的 `mobile.html`。
+
+私有仓库使用 GitHub Pages 需要账号套餐支持（如 GitHub Pro）。仓库私有与演示站点公开是两项独立设置；此 Demo 的 Pages 用于公开体验。不支持当前套餐时，不会自动将仓库改成公开或升级付费。
