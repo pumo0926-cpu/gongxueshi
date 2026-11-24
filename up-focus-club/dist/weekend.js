@@ -402,7 +402,13 @@ document.addEventListener('click',event=>{
     case 'view': state.page='wall'; break;
   }
 
-  render(true);
+  const replyAfterBooking=action==='wxBookSlot'||action==='wxConfirm';
+  render(!replyAfterBooking);
+  if(replyAfterBooking){
+    const input=document.querySelector('#wxParentMessage');
+    input?.focus({preventScroll:true});
+    requestAnimationFrame(()=>input?.closest('.composer')?.scrollIntoView({block:'end',behavior:'smooth'}));
+  }
 });
 
 document.addEventListener('change',event=>{
