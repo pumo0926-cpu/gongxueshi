@@ -17,7 +17,7 @@
 const views={wechat:'./?view=wechat',waiting:'./?view=waiting',results:'classroom.html?day=0',reminders:'wechat-reminders.html'};
 const scene=new URLSearchParams(location.search).get('scene');
 const target=new URL(views[scene]||views.wechat,location.href);
-target.searchParams.set('preview','mobile-r7');
+target.searchParams.set('preview','mobile-r8');
 document.querySelector('iframe').src=target.href;
 </script>
 </body>
