@@ -38,8 +38,8 @@ window.Reservations=(()=>{
     const start=reservation.startsAt,end=start+windowMs,items=[];
     const arrived=forceAbsent?null:reservation.arrivedAt;
     const hourAt=start-3600000;
-    if((reservation.createdAt??-Infinity)<=hourAt&&now>=hourAt&&(!arrived||arrived>hourAt))items.push({id:'hour',at:hourAt,text:'睿睿妈妈，您好！您预约的「'+reservation.title+'」将在'+timeLabel(start)+'开始，还有1小时。麻烦告诉孩子，和伙伴约好的共学快开始啦。开场后1小时内进入都可以，提醒孩子准备好，从周周阿朴 App 进入共学室。'});
-    if((reservation.createdAt??-Infinity)<=start+600000&&now>=start+600000&&(!arrived||arrived>start+600000))items.push({id:'late',at:start+600000,text:'睿睿妈妈，您好！'+timeLabel(start)+'这场共学已经开始10分钟了，还没见睿睿进入共学室。是临时有安排，还是进入时遇到了问题？本场在'+timeLabel(end)+'前都可以启动，目前还有50分钟可进入。方便的话提醒孩子进入，需要帮助可以回复我。'});
+    if((reservation.createdAt??-Infinity)<=hourAt&&now>=hourAt&&(!arrived||arrived>hourAt))items.push({id:'hour',at:hourAt,text:'睿睿妈妈，共学还有1小时。\n请提醒孩子'+timeLabel(start)+'进入共学室，\n和伙伴一起学、练、改。'});
+    if((reservation.createdAt??-Infinity)<=start+600000&&now>=start+600000&&(!arrived||arrived>start+600000))items.push({id:'late',at:start+600000,text:'睿睿妈妈，共学已开始10分钟。\n还没见孩子，是遇到问题了吗？\n还有50分钟，可在'+timeLabel(end)+'前进入。'});
     return items;
   }
   return {windowMs,titles,times,dateKey,startAt,get,latest,upsert,arrive,timeLabel,dateLabel,upcoming,notices,nextDate};
